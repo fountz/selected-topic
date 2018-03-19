@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\FounTz\\Desktop\\fb\\people\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\FounTz\\.android\\build-cache\\79efe050f0c7e31895bab6d3242c0b0c64398f73\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\FounTz\\Desktop\\fb\\people\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\FounTz\\.android\\build-cache\\79efe050f0c7e31895bab6d3242c0b0c64398f73\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\FounTz\\Desktop\\fb\\people\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\FounTz\\.android\\build-cache\\79efe050f0c7e31895bab6d3242c0b0c64398f73\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\FounTz\\Desktop\\fb\\people\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\FounTz\\.android\\build-cache\\79efe050f0c7e31895bab6d3242c0b0c64398f73\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]

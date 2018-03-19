@@ -1,0 +1,29 @@
+
+<ActionBar title="ผลสำรวจรายได้ครัวเรือนในประเทศไทย" class="action-bar"></ActionBar>
+
+<StackLayout class="page">
+    
+    <ListView [items]="news" class="list-group">
+            
+        <ng-template let-new="item" let-i="index">
+            <StackLayout>
+            <Label class="h3" [text]="[' ลำดับที่ ']+[new.no]+['. จังหวัด']+[new.province]" ></Label>
+            <Label  [text]="['              ครัวเรือนทั้งหมดที่สำรวจ ']+[new.housesurvey]+[' ครัวเรือน']"></Label>
+            <Label  [text]="['              จำนวนคนทั้งหมดที่สำรวจ ']+[new.peopleservey]+[' คน']"></Label>
+            <Label  [text]="['              รวมรายได้จากอาชีพหลัก ']+[new.primaryincome]+[' บาท']"></Label>
+            <Label  [text]="['               รายได้เฉลี่ยจากอาชีพหลัก ']+[new.averageincome]+[' บาท']"></Label>
+            <Label  [text]="['               รวมรายได้จากอาชีพรองและเสริม ']+[new.secondincome]+[' บาท']"></Label>
+            <Label  [text]="['               รายได้เฉลี่ยจากอาชีพรองและเสริม ']+[new.averagesecondincome]+[' บาท']"></Label>
+            <Label  [text]="['               รวมรายได้อื่นๆ ']+[new.otherincome]+[' บาท']"></Label>
+            <Label  [text]="['               รายได้เฉลี่ยจากอื่นๆ ']+[new.averageotherincome]+[' บาท']"></Label>
+            <Label  [text]="['               รายได้จากการทำกินและหาไว้ใช้เอง ']+[new.incomeforuse]+[' บาท']"></Label>
+            <Label  [text]="['               รายได้เฉลี่ยจากการทำกินและหาไว้ใช้เอง ']+[new.averageincomeforused]+[' บาท']"></Label>
+            <Label  [text]="['               รวมรายได้ทั้งหมดของคนในครัวเรือน ']+[new.totalincome]+[' บาท']"></Label>
+            <Label  [text]="['               รวมรายได้เฉลี่ยทั้งหมดของคนในครัวเรือน ']+[new.totalallincome]+[' บาท']"></Label>
+            <Label  [text]="['               รายได้เฉลี่ยต่อคนต่อปี ']+[new.incomepersonyear]+[' บาท']"></Label>
+          </StackLayout>
+        </ng-template>
+        
+    </ListView>
+    
+</StackLayout>
