@@ -1,5 +1,5 @@
 
-<ActionBar title="ผลสำรวจรายได้ครัวเรือนในประเทศไทย" class="action-bar"></ActionBar>
+<ActionBar title="กรมทางหลวง" class="action-bar"></ActionBar>
 
 <StackLayout class="page">
     
@@ -7,20 +7,21 @@
             
         <ng-template let-new="item" let-i="index">
             <StackLayout>
-            <Label class="h3" [text]="[' ลำดับที่ ']+[new.no]+['. จังหวัด']+[new.province]" ></Label>
-            <Label  [text]="['              ครัวเรือนทั้งหมดที่สำรวจ ']+[new.housesurvey]+[' ครัวเรือน']"></Label>
-            <Label  [text]="['              จำนวนคนทั้งหมดที่สำรวจ ']+[new.peopleservey]+[' คน']"></Label>
-            <Label  [text]="['              รวมรายได้จากอาชีพหลัก ']+[new.primaryincome]+[' บาท']"></Label>
-            <Label  [text]="['               รายได้เฉลี่ยจากอาชีพหลัก ']+[new.averageincome]+[' บาท']"></Label>
-            <Label  [text]="['               รวมรายได้จากอาชีพรองและเสริม ']+[new.secondincome]+[' บาท']"></Label>
-            <Label  [text]="['               รายได้เฉลี่ยจากอาชีพรองและเสริม ']+[new.averagesecondincome]+[' บาท']"></Label>
-            <Label  [text]="['               รวมรายได้อื่นๆ ']+[new.otherincome]+[' บาท']"></Label>
-            <Label  [text]="['               รายได้เฉลี่ยจากอื่นๆ ']+[new.averageotherincome]+[' บาท']"></Label>
-            <Label  [text]="['               รายได้จากการทำกินและหาไว้ใช้เอง ']+[new.incomeforuse]+[' บาท']"></Label>
-            <Label  [text]="['               รายได้เฉลี่ยจากการทำกินและหาไว้ใช้เอง ']+[new.averageincomeforused]+[' บาท']"></Label>
-            <Label  [text]="['               รวมรายได้ทั้งหมดของคนในครัวเรือน ']+[new.totalincome]+[' บาท']"></Label>
-            <Label  [text]="['               รวมรายได้เฉลี่ยทั้งหมดของคนในครัวเรือน ']+[new.totalallincome]+[' บาท']"></Label>
-            <Label  [text]="['               รายได้เฉลี่ยต่อคนต่อปี ']+[new.incomepersonyear]+[' บาท']"></Label>
+            <Label class="h3" [text]="[' ลำดับที่ ']+[new.NO]+[' หมายเลขทางหลวง ']+[new.routeno]+[' หมายเลขตอน ']+[new.controlno] +[' รหัส ']+[new.stationid]" ></Label>
+            <Label  [text]="[' ชื่อตอน(ไทย) ']+[new.namet]" ></Label>
+            <Label  [text]="[' ชื่อตอน(Eng) ']+[new.namee]+[' รหัส สทล. ']+[new.div_num]" ></Label>
+            <Label  [text]="[' แขวงทางหลวง(ไทย) ']+[new.district]" ></Label>
+            <Label  [text]="[' แขวงทางหลวง(Eng) ']+[new.engdist]" ></Label>
+            <Label  [text]="[' กม. จุดสำรวจ ']+[new.km1]+[' ประเภทจุดสำรวจ ']+[new.type]+[' รหัสแขวง ']+[new.code]+[' รหัสจังหวัด ']+[new.nod]" ></Label>
+            <Label  [text]="[' จังหวัด ']+[new.changwat]+[' ']+[new.engchang]" ></Label>
+            <Label  [text]="[' รถจักรยาน2 ล้อ/3ล้อ ']+[new.VEH1T]+[' คัน ']+[' 3 ล้อเครื่องและจักรยานยนต์ ']+[new.VEH2T]+[' คัน ']" ></Label>
+            <Label  [text]="[' รถยนต์นั่งไม่เกิน 7 คน ']+[new.VEH3_T]+[' คัน ']+[' รถยนต์นั่งเกิน 7 คน ']+[new.VEH4_T]+[' คัน ']" ></Label>
+            <Label  [text]="[' รถโดยสารขนาดเล็ก ']+[new.VEH5_T]+[' คัน ']+[' รถโดยสารขนาดกลาง ']+[new.VEH6_T]+[' คัน ']" ></Label>
+            <Label  [text]="[' รถโดยสารขนาดใหญ่ ']+[new.VEH7_T]+[' คัน ']+[' รถบรรทุกขนาดเล็ก ']+[new.VEH8_T]+[' คัน ']" ></Label>
+            <Label  [text]="[' รถบรรทุกขนาด 2 เพลา (6 ล้อ) ']+[new.VEH9_T]+[' คัน ']+[' รถบรรทุกขนาด 3 เพลา (10 ล้อ) ']+[new.VEH10_T]+[' คัน ']" ></Label>
+            <Label  [text]="[' รถพ่วง ']+[new.VEH11_T]+[' คัน ']+[' รถกึ่งพ่วง ']+[new.VEH12_T]+[' คัน ']" ></Label>
+            <Label  [text]="[' รถเครื่องจักรและรถดัดแปลง ']+[new.VEH13_T]+[' คัน ']+[' รถกึ่งพ่วง ']+[new.VEH12_T]+[' คัน ']+[' รถเครื่องจักรและรถดัดแปลง ']+[new.VEH13_T]+[' คัน ']" ></Label>
+            <Label class="h3"  [text]="[' รวม(ไม่รวมจักรยาน/จยย) ']+[new.VEH_T]+[' คัน ']+[' %รถบรรทุก ']+[new.HVTOT]+[' % ']" ></Label>
           </StackLayout>
         </ng-template>
         
